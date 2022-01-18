@@ -1,5 +1,10 @@
 
-https://raw.githubusercontent.com/Zseni051/GithubWidget-iframe/main/Example.png
+<div>
+  <p align="center"><a href="https://github.com/Zseni051/GithubWidget-iframe">
+    <img src="https://raw.githubusercontent.com/Zseni051/GithubWidget-iframe/main/Example.png" align="center" alt="AutoSend.png"></a>
+  </p>
+</div>
+
 
 
 

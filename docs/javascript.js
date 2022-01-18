@@ -1,4 +1,5 @@
 var doc = document;
+var styleSheet = doc.createElement("style");
 var docURL = window.location.href;
 var params = [];
 
@@ -11,14 +12,14 @@ if (docURL.indexOf('/#/') > -1) {
       docURL = docURL.substring(0, docURL.length - 1);
     }
     params = docURL.split('/');
-    params = params[0]
-    if(doc.getElementById("add2me") != null){
-        doc.getElementById("add2me").innerHTML = 
-        `<div class="github-widget" data-username="${params}"></div>`;
-    }
+
+    doc.getElementById("add2me").innerHTML = 
+    `<div class="github-widget" data-username="${params[0]}"></div>`
+
+    styleSheet.type = "text/css"
+    styleSheet.innerText = params[1]
+    document.head.appendChild(styleSheet)
     }
 } else {
-    if(doc.getElementById("add2me") != null){
-        doc.getElementById("add2me").innerHTML = `<p>No username given</p>`;
-    }
+    doc.getElementById("add2me").innerHTML = `<p>No username given</p>`;
 }

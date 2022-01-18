@@ -13,11 +13,6 @@ if (docURL.indexOf('/#/') !== -1) {
   docURL = docURL.split('/#/')[1];
   if (docURL != '') {
 
-    // omit the last forward slash if exist
-    if (docURL[docURL.length - 1] == '/') {
-      docURL = docURL.substring(0, docURL.length - 1);
-    }
-
     // if "link: exist remove it from docUrl and add it to css_link"
     if(docURL.indexOf('link:') !== -1) {
       css_link = docURL.split('link:')[1];
@@ -35,7 +30,6 @@ if (docURL.indexOf('/#/') !== -1) {
     }
     
     if(css_link != ""){
-      styleSheet.id   = cssId;
       styleSheet.rel  = 'stylesheet';
       styleSheet.type = 'text/css';
       styleSheet.href = css_link;

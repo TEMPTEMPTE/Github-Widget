@@ -4,7 +4,10 @@
     <img src="https://raw.githubusercontent.com/Zseni051/GithubWidget-iframe/main/Example.png" align="center" alt="AutoSend.png"></a>
   </p>
 </div>
-This project allows an iframe based approach instead of an inline DOM manipulation for [this](https://github.com/surbhioberoi/github-widget)
+
+This Fork uses github pages to allow an iframe based approach instead of an inline DOM manipulation. 
+
+Forked from: [here](https://github.com/surbhioberoi/github-widget)
 
 Example iframe:
 ```html

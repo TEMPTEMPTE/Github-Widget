@@ -1,3 +1,8 @@
+
+https://raw.githubusercontent.com/Zseni051/GithubWidget-iframe/main/Example.png
+
+
+
 ## GithubWidget-iframe
 
 This project allows an iframe based approach instead of an inline DOM manipulation for [this](https://github.com/surbhioberoi/github-widget)
@@ -8,3 +13,20 @@ Example iframe:
 ```
 
 To use just change "your-username" to this: ```https://zseni051.github.io/GithubWidget-iframe/#/your-username```
+
+<div>
+  <p align="center">
+    <a href="https://www.youtube.com/channel/UCsIaU94p647veKr7sy12wmA" target="_blank">
+      <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube">
+    </a>
+    <a href="https://discord.gg/SXng95f" target="_blank">
+      <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+    </a> 
+    <a href="https://twitter.com/zseni10" target="_blank">
+      <img src="https://img.shields.io/badge/Twitter-55ADEE?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter">
+    </a> 
+    <a href = "mailto:orangejuice005511@gmail.com">
+      <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" alt="Email_Contact">
+    </a>
+  </p>
+</div>

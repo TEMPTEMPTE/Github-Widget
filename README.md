@@ -39,5 +39,5 @@ Replace:
 
 #### Example Result:
 ```html
-<iframe src="https://zseni051.github.io/GithubWidget-iframe/#/Zseni051/.github-widget{font-size:100px};" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://zseni051.github.io/GithubWidget-iframe/#/Zseni051/.github-widget{font-size:100px;}" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 ```

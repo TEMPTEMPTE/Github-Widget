@@ -16,6 +16,12 @@ To use just change "your-username" to this: ```https://zseni051.github.io/Github
 
 <div>
   <p align="center">
+    <a>______________________________</a>
+  </p>
+  <p align="center">
+    <a>____________________________________________________________</a>
+  </p>
+  <p align="center">
     <a href="https://www.youtube.com/channel/UCsIaU94p647veKr7sy12wmA" target="_blank">
       <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube">
     </a>
@@ -26,7 +32,7 @@ To use just change "your-username" to this: ```https://zseni051.github.io/Github
       <img src="https://img.shields.io/badge/Twitter-55ADEE?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter">
     </a> 
     <a href = "mailto:orangejuice005511@gmail.com">
-      <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" alt="Email_Contact">
+      <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
     </a>
   </p>
 </div>

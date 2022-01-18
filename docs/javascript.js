@@ -23,7 +23,16 @@ if (docURL.indexOf('/#/') > -1) {
     if(params[1] != null){
       styleSheet.type = "text/css"
       styleSheet.innerText = params[1]
-      document.head.appendChild(styleSheet)
+      doc.head.appendChild(styleSheet)
+    }
+    
+    if(params[2] != null){
+      styleSheet.id   = cssId;
+      styleSheet.rel  = 'stylesheet';
+      styleSheet.type = 'text/css';
+      styleSheet.href = params[2];
+      styleSheet.media = 'all';
+      doc.head.appendChild(styleSheet);
     }
 
     if(params[0] != null){

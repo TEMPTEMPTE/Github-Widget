@@ -13,12 +13,16 @@ if (docURL.indexOf('/#/') > -1) {
     }
     params = docURL.split('/');
 
-    doc.getElementById("add2me").innerHTML = 
-    `<div class="github-widget" data-username="${params[0]}"></div>`
+    if(params[0] != null){
+      doc.getElementById("add2me").innerHTML = 
+      `<div class="github-widget" data-username="${params[0]}"></div>`
+    }
 
-    styleSheet.type = "text/css"
-    styleSheet.innerText = params[1]
-    document.head.appendChild(styleSheet)
+    if(params[1] != null){
+      styleSheet.type = "text/css"
+      styleSheet.innerText = params[1]
+      document.head.appendChild(styleSheet)
+    }
     }
 } else {
     doc.getElementById("add2me").innerHTML = `<p>No username given</p>`;

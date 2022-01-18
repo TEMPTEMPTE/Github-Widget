@@ -1,15 +1,9 @@
-
+<h2 align="center">GithubWidget-iframe</h2>
 <div>
   <p align="center"><a href="https://github.com/Zseni051/GithubWidget-iframe">
     <img src="https://raw.githubusercontent.com/Zseni051/GithubWidget-iframe/main/Example.png" align="center" alt="AutoSend.png"></a>
   </p>
 </div>
-
-
-
-
-## GithubWidget-iframe
-
 This project allows an iframe based approach instead of an inline DOM manipulation for [this](https://github.com/surbhioberoi/github-widget)
 
 Example iframe:

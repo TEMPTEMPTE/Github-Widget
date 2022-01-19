@@ -35,8 +35,8 @@ Copy paste this code in your HTML
 ```
 Replace:
   - `your-username` with your GitHub username
-  - `your-css` with the styles you want **[optional]**
-  - `your-external-css` with an external css link **[optional]**
+  - `your-css` with the styles you want **[optional]** leave it blank otherwise
+  - `your-external-css` with an external css link **[optional]** leave it blank otherwise
 
 #### Example Result:
 ```html

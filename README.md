@@ -37,8 +37,3 @@ Replace:
   - `your-username` with your GitHub username
   - `your-css` with your own styles | ***[optional] leave it blank otherwise*** 
   - `your-external-css` with an external css link | ***[optional] leave it blank otherwise***
-
-#### Example Result:
-```html
-<iframe src="https://zseni051.github.io/GithubWidget-iframe/#/Zseni051/.github-widget{font-size:100px;}/link:https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-```

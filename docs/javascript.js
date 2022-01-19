@@ -26,7 +26,16 @@ if (docURL.indexOf('/#/') !== -1) {
     console.log("params:",params);
 
     if(params[2] != ""){
-      doc.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", `<link rel="stylesheet" href=${params[2]} />`);
+        if(document.createStyleSheet) {
+            document.createStyleSheet(params[2]);
+        }
+        else {
+            var styles = `@import url(${params[2]});`;
+            var newSS = document.createElement('link');
+            newSS.rel='stylesheet';
+            newSS.href='data:text/css,'+escape(styles);
+            document.getElementsByTagName("head")[0].appendChild(newSS);
+        }
     }
 
     if(params[1] != ""){

@@ -31,13 +31,14 @@
 
 Copy paste this code in your HTML
 ```html
-<iframe src="https://zseni051.github.io/GithubWidget-iframe/#/your-username/your-css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://zseni051.github.io/GithubWidget-iframe/#/your-username/your-css/link:your-external-css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 ```
 Replace:
   - `your-username` with your GitHub username
   - `your-css` with the styles you want **[optional]**
+  - `your-external-css` with an external css link **[optional]**
 
 #### Example Result:
 ```html
-<iframe src="https://zseni051.github.io/GithubWidget-iframe/#/Zseni051/.github-widget{font-size:100px;}" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://zseni051.github.io/GithubWidget-iframe/#/Zseni051/.github-widget{font-size:100px;}/link:https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 ```

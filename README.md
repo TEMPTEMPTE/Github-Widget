@@ -23,7 +23,7 @@
 
 ## About
 
-Forked from: [https://github.com/surbhioberoi/github-widget](surbhioberoi/github-widget)
+Forked from: [surbhioberoi/github-widget](https://github.com/surbhioberoi/github-widget)
   
 ## How to use
 

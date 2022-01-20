@@ -23,9 +23,7 @@
 
 ## About
 
-<p>This Fork uses github pages to allow an iframe based approach instead of an inline DOM manipulation.
-<br>Forked from: <a href="https://github.com/surbhioberoi/github-widget">surbhioberoi/github-widget</a>
-</p>
+Forked from: [https://github.com/surbhioberoi/github-widget](surbhioberoi/github-widget)
   
 ## How to use
 

@@ -54,6 +54,7 @@
 .github-widget {
 	border: 1px solid #010409;
 	max-width: 350px;
+	border-radius: .3rem;
 }
 
 .gh-widget-item {

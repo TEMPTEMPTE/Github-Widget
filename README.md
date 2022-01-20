@@ -2,7 +2,7 @@
   <h1 align="center">Github Widget</h1>
   <p align="center">
     <a href="https://github.com/Zseni051/Github-Widget">
-      <img src="https://raw.githubusercontent.com/Zseni051/GithubWidget-iframe/main/Example.png" align="center" alt="Example.png">
+      <img src="https://raw.githubusercontent.com/Zseni051/Github-Widget/main/Example.png" align="center" alt="Example.png">
     </a>
   </p>
   <p align="center">

@@ -38,7 +38,7 @@ if (docURL.indexOf('/#/') !== -1) {
 
     if(params[0]){
       if(params[1] = ""){
-        params[1] = "3"
+        params[1] = 3;
       }
       doc.getElementById("add2me").innerHTML = 
       `<div class="github-widget" data-username="${params[0]}" data-toprepos="${params[1]}"></div>`

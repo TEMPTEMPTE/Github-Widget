@@ -32,9 +32,9 @@ function start() {
 		var c = a[b];
 		c.setAttribute("id", "widget" + b);
 		appendToWidget("#widget" + b, "div", "", html);
-		d = c.dataset.toprepos;
+		d = c.dataset.toprepos
 		if (d > 10){
-                  d = 10
+			d = 10
 		}
 		c = c.dataset.username;
 		fetchRepos(c, "#widget" + b, d);

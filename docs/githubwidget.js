@@ -57,7 +57,7 @@ function fetchUserDetails(a, b) {
 }
 
 function updateLastPush(a, b) {
-	appendToWidet(b + " .gh-widget-active-time", "span", "", "Last active: " + (a ? a + " day(s) ago" : "Today"))
+	appendToWidget(b + " .gh-widget-active-time", "span", "", "Last active: " + (a ? a + " day(s) ago" : "Today"))
 }
 
 function lastPushedDay(a) {

@@ -31,7 +31,7 @@
 
 Copy paste this code in your HTML
 ```html
-<iframe src="https://zseni051.github.io/GithubWidget-iframe/#/your-username/your-css/link:your-external-css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://zseni051.github.io/Github-Widget/#/your-username/your-css/link:your-external-css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 ```
 Replace:
   - `your-username` with your GitHub username

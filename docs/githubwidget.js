@@ -33,6 +33,9 @@ function start() {
 		c.setAttribute("id", "widget" + b);
 		appendToWidget("#widget" + b, "div", "", html);
 		d = c.dataset.toprepos
+		if (d > 10){
+			d = 10
+		}
 		c = c.dataset.username;
 		fetchRepos(c, "#widget" + b, d);
 		fetchUserDetails(c, "#widget" + b)

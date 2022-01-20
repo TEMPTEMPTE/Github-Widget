@@ -31,9 +31,10 @@
 
 Copy paste this code in your HTML
 ```html
-<iframe src="https://zseni051.github.io/Github-Widget/#/your-username/your-css/link:your-external-css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://zseni051.github.io/Github-Widget/#/your-username/toprepos/your-css/link:your-external-css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 ```
 Replace:
   - `your-username` with your GitHub username
+  - `toprepos` with how many repos you want it to list | ***10 is max***
   - `your-css` with your own styles | ***[optional] leave it blank otherwise*** 
   - `your-external-css` with an external css link | ***[optional] leave it blank otherwise***

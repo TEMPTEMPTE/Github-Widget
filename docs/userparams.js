@@ -21,32 +21,24 @@ if (docURL.indexOf('/#/') !== -1) {
     
     // split the URL final string o get an object with all params 
     params = docURL.split('/');
+
     // add css_link to params
     params.push(css_link)
     console.log("params:",params);
 
-    if(params[2] != ""){
-        if(document.createStyleSheet) {
-            document.createStyleSheet(params[2]);
-        }
-        else {
-            var styles = `@import url(${params[2]});`;
-            var newSS = document.createElement('link');
-            newSS.rel='stylesheet';
-            newSS.href='data:text/css,'+escape(styles);
-            document.getElementsByTagName("head")[0].appendChild(newSS);
-        }
+    if(params[3] != ""){
+      doc.getElementsByTagName("head")[0].insertAdjacentHTML("beforeend", `<link rel="stylesheet" href=${params[2]} />`);
     }
 
-    if(params[1] != ""){
+    if(params[2] != ""){
       styleSheet.type = "text/css"
       styleSheet.innerText = params[1]
       doc.head.appendChild(styleSheet)
     }
 
-    if(params[0] != ""){
+    if(params[0] && params[1] != ""){
       doc.getElementById("add2me").innerHTML = 
-      `<div class="github-widget" data-username="${params[0]}"></div>`
+      `<div class="github-widget" data-username="${params[0]}" data-toprepos="${params[1]}"></div>`
     }
   }
 } else {

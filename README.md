@@ -33,6 +33,6 @@ Copy paste this code in your HTML
 ```
 Replace:
   - `your-username` with your GitHub username
-  - `toprepos` with how many repos you want it to list | ***10 is max***
+  - `toprepos` with number of repos you want to list | ***10 is max***
   - `your-css` with your own styles | ***[optional] leave it blank otherwise*** 
   - `your-external-css` with an external css link | ***[optional] leave it blank otherwise***

@@ -29,10 +29,10 @@ Forked from: [surbhioberoi/github-widget](https://github.com/surbhioberoi/github
 
 Copy paste this code in your HTML
 ```html
-<iframe src="https://zseni051.github.io/Github-Widget/#/your-username/toprepos/your-css/link:your-external-css" width="330" height="515" scrolling="no" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://zseni051.github.io/Github-Widget/#/username=Zseni051&toprepos=3" width="330" height="515" scrolling="no" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 ```
-Replace:
-  - `your-username` with your GitHub username
-  - `toprepos` with number of repos you want to list | ***10 is max***
-  - `your-css` with your own styles | ***[optional] leave it blank otherwise*** 
-  - `your-external-css` with an external css link | ***[optional] leave it blank otherwise***
+Options:
+  - `username=:username` replace `:username` with your GitHub username
+  - `toprepos=:number` replace `:number` with number of repos you want to list | ***10 is max, Default is 3 if left blank***
+  - `style=:styles` replace `:styles` with your own styles
+  - `css=:csslink` replace `:csslink` with an external css link | ***Must be the last paramater***

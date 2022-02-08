@@ -29,7 +29,7 @@ Forked from: [surbhioberoi/github-widget](https://github.com/surbhioberoi/github
 
 Copy paste this code in your HTML
 ```html
-<iframe src="https://zseni051.github.io/Github-Widget/#/your-username/toprepos/your-css/link:your-external-css" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://zseni051.github.io/Github-Widget/#/your-username/toprepos/your-css/link:your-external-css" width="330" height="515" scrolling="no" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 ```
 Replace:
   - `your-username` with your GitHub username

@@ -8,8 +8,8 @@ var params = [];
 docURL = docURL.replace(window.location.origin, '');
 
 // if /#/ found then we have URL parameters
-if (docURL.indexOf('/api/?') !== -1) { 
-  docURL = docURL.split('api/?')[1];
+if (docURL.indexOf('/#/?') !== -1) { 
+  docURL = docURL.split('#/?')[1];
   if (docURL != '') {
 
     // if "&css="" exist remove it from docUrl and add it to css_link

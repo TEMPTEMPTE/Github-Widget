@@ -39,6 +39,10 @@ if (docURL.indexOf('/#/?') !== -1) {
         var toprepos = param_value;
         console.log(param_name + ': ' + param_value);
       }
+      if (param_name == 'image') {
+        var image = param_value;
+        console.log(param_name + ': ' + param_value);
+      }
       if (param_name == 'style') {
         var style = param_value;
         console.log(param_name + ': ' + param_value);
@@ -61,7 +65,10 @@ if (docURL.indexOf('/#/?') !== -1) {
       if(!toprepos){
         toprepos = 3
       }
-      doc.getElementById("add2me").innerHTML = `<div class="github-widget" data-username="${username}" data-toprepos="${toprepos}"></div>`
+      if(!image){
+        image = "False"
+      }
+      doc.getElementById("add2me").innerHTML = `<div id="github-widget" class="github-widget" data-username="${username}" data-toprepos="${toprepos}" data-image="${image}"></div>`
     }
   }
 } else {

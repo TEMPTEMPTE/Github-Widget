@@ -27,18 +27,18 @@ function start() {
 	var styles = '#heading{background-color:#161B22}.full-name,.bio,.stat-name,.count,.gh-widget-link{color:#F0F6FC;font-family:"Segoe UI"}.full-name{font-weight:600}.gh-widget-stats,.names,.language,.stars{background-color:#0D1117;color:#F0F6FC}#footer{background-color:#010409}.gh-widget-link,.follow-button{text-decoration:none;color:#F0F6FC}.gh-widget-link:hover{text-decoration:underline;color:#1881FD}.gh-widget-container{display:flex;flex-direction:row;flex-wrap:no-wrap;align-items:center;justify-content:center;background-color:#0D1117;color:#F0F6FC;font-family:"Segoe UI"}.github-widget{border:1px solid #010409;max-width:350px;border-radius:.3rem}.gh-widget-item{flex:1;text-align:center;padding:10px}.gh-widget-repositories .language{text-align:left}.gh-widget-repositories .language div,.gh-widget-repositories .stars div{padding:5px 0}.gh-widget-photo img{border-radius:100%;max-width:90px}.gh-widget-personal-details{flex:6}.gh-widget-personal-details .full-name{font-size:1.5em;line-height:1.5em}.gh-widget-personal-details .location{font-size:.8em}.gh-widget-stats .count{font-size:1.2em;font-weight:700}.gh-widget-repositories .names{flex:2;text-align:left}.gh-widget-repositories .names div{padding:5px 0;text-overflow:ellipsis}.gh-widget-active-time{flex:4;font-size:.8em}.gh-widget-heading{font-weight:400;font-size:1.1em;background-color:#0D1117;color:#F0F6FC}.gh-widget-hr{border:0;border-bottom:1px solid #30363D;margin:0}.gh-widget-follow button{width:100%;height:2em;border:none;background-color:#238636;border-radius:.3rem}.gh-widget-follow button:hover{background-color:#2EA043}.gh-widget-photo,.gh-widget-follow{flex:2}'
 	
 	appendToWidget("body", "style", "", styles);
-	for (var a =
-			document.querySelectorAll(".github-widget"), b = 0; b < a.length; b++) {
+	for (var a = document.querySelectorAll(".github-widget"), b = 0; b < a.length; b++) {
 		var c = a[b];
 		c.setAttribute("id", "widget" + b);
 		appendToWidget("#widget" + b, "div", "", html);
 		d = c.dataset.toprepos
-		if (d > 10){
-			d = 10
+		if(d > 10){ 
+			d = 10 
 		}
+		e = c.dataset.image
 		c = c.dataset.username;
 		fetchRepos(c, "#widget" + b, d);
-		fetchUserDetails(c, "#widget" + b)
+		fetchUserDetails(c, "#widget" + b, e);
 	}
 }
 ready(start);
@@ -50,9 +50,12 @@ function fetchRepos(a, b, c) {
 	})
 }
 
-function fetchUserDetails(a, b) {
+function fetchUserDetails(a, b, c) {
 	getJSON("https://api.github.com/users/" + a, function (a) {
 		updateUserDetails(a, b)
+		if(c == "true" || c == "True"){
+			convert2image(b)
+		}
 	})
 }
 
@@ -73,8 +76,7 @@ function updateUserDetails(a, b) {
 	a.bio && appendToWidget(b + " .gh-widget-personal-details", "div", "bio", a.bio);
 	a.location && appendToWidget(b + " .gh-widget-personal-details", "div", "location", "⚲ " + a.location);
 	appendToWidget(b + " .gh-widget-stats", "div", "gh-widget-item", '<div class="count">' + a.followers + '</div><div class="stat-name">Followers</div>');
-	appendToWidget(b + " .gh-widget-stats", "div", "gh-widget-item", '<div class="count">' +
-		a.following + '</div><div class="stat-name">Following</div>');
+	appendToWidget(b + " .gh-widget-stats", "div", "gh-widget-item", '<div class="count">' + a.following + '</div><div class="stat-name">Following</div>');
 	appendToWidget(b + " .gh-widget-stats", "div", "gh-widget-item", '<div class="count">' + a.public_repos + '</div><div class="stat-name">Repositories</div>');
 	appendToWidget(b + " .gh-widget-photo", "span", "", '<img src="' + a.avatar_url + '">');
 	appendToWidget(b + " .gh-widget-follow", "button", "", '<a class="follow-button" target="new" href="' + a.html_url + '">Follow</a>')
@@ -102,3 +104,11 @@ function topRepos(a, c) {
 	}
 	return b
 };
+
+function convert2image(a) {
+	a = document.querySelector(a)
+	html2canvas(a).then(function(canvas) {
+		a.innerHTML = '<img src="' + canvas.toDataURL("image/png") + '">';
+		a.classList.remove("github-widget");
+	});
+}
